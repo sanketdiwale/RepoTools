@@ -2,7 +2,7 @@
 if branch=$(git symbolic-ref --short -q HEAD)
 then
   echo on branch $branch
-  echo "Merging to develop"
+  echo "Merging to master"
   git checkout master
   git merge --no-ff $branch
   echo "Merged and switched to branch develop"
