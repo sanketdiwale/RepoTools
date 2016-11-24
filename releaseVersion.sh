@@ -8,7 +8,7 @@ else
 	while true; do
 		read -p "Are you sure you want to release this as a version?" yn
 		case $yn in
-		    [Yy]* ) . ./bumpversion.sh; git checkout develop; echo "Released and switched to develop"; break;;
+		    [Yy]* ) . ./RepoTools/bumpversion.sh; git checkout develop; echo "Released and switched to develop"; break;;
 		    [Nn]* ) break;;
 		    * ) echo "Please answer yes or no.";;
 		esac
